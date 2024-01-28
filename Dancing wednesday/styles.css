@@ -1,0 +1,230 @@
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+    background: #394433;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 7;
+  }
+  
+  .head {
+    background: #8f9392;
+    height: 100px;
+    width: 80px;
+    border-radius: 50% 50% 46% 60% / 38% 38% 62% 62%;
+    position: relative;
+    z-index: 9;
+    transform-style: preserve-3d;
+  }
+  
+  .head::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top-left-radius: 50%;
+    border-left: 8px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black;
+    z-index: 12;
+    top: 80px;
+    left: 30px;
+  }
+  
+  .head::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 5px solid black;
+    z-index: 12;
+    top: 80px;
+    right: 30px;
+  }
+  
+  .eyes {
+    background: white;
+    height: 30px;
+    width: 25px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+  }
+  
+  .eye1 {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+  }
+  .eyelid1 {
+    position: absolute;
+    z-index: 11;
+    width: 25px;
+    height: 15px;
+    top: 40px;
+    left: 10px;
+    background-color: #43454e;
+    border-radius: 10rem 10rem 0 0;
+    animation: closeeye1 0.7s -1s infinite;
+  }
+  
+  .eyeball1 {
+    position: absolute;
+    background: black;
+    height: 15px;
+    width: 10px;
+    border-radius: 50%;
+    top: 10px;
+    left: 7px;
+  }
+  
+  .eye2 {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+  }
+  .eyelid2 {
+    position: absolute;
+    z-index: 11;
+    width: 25px;
+    height: 15px;
+    top: 40px;
+    right: 10px;
+    background-color: #43454e;
+    border-radius: 10rem 10rem 0 0;
+    animation: closeeye2 0.7s 0s infinite;
+  }
+  .eyeball2 {
+    position: absolute;
+    background: black;
+    height: 15px;
+    width: 10px;
+    border-radius: 50%;
+    top: 10px;
+    right: 7px;
+  }
+  
+  .hair {
+    height: 45px;
+    width: 49px;
+    background: black;
+    border-top-left-radius: 50px;
+    position: absolute;
+  }
+  
+  .hair1 {
+    position: absolute;
+    top: -6px;
+    left: -10px;
+  }
+  .hair2 {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    transform: rotateY(180deg);
+  }
+  
+  .ponytail {
+    position: absolute;
+    height: 100px;
+    width: 10px;
+    background: #000;
+    /* overflow: visible; */
+    z-index: 10;
+    left: -10px;
+    top: 38px;
+    /* border-top-right-radius: 50%;
+      border-top-left-radius: 50%;  */
+  }
+  
+  .ponytail::before {
+    content: "";
+    height: 100px;
+    width: 10px;
+    background-color: #000;
+    z-index: 10;
+    position: absolute;
+    left: 90px;
+  }
+  
+  .neck {
+    height: 30px;
+    width: 30px;
+    background: #858887;
+    position: absolute;
+    /* z-index: 8;*/
+    transform: translateZ(-10px);
+    top: 87px;
+    left: 25px;
+  }
+  .collar {
+    content: "";
+    height: 30px;
+    width: 60px;
+    position: absolute;
+    background-color: white;
+    z-index: 12;
+    top: 20px;
+    left: -15px;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+  }
+  .collar::after {
+    content: "";
+    width: 10px;
+    height: 0;
+    position: absolute;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 31px solid black;
+    /* object-fit: contain; */
+  }
+  
+  .text {
+    position: absolute;
+    z-index: 12;
+    color: black;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    bottom: -40px;
+    left: -50px;
+  }
+  
+  @keyframes closeeye1{
+    0% {
+      width: 25px;
+      height: 15px;
+    }
+    50% {
+      width: 25px;
+      height: 20px;
+  
+    }
+    100% {
+      width: 25px;
+      height: 15px;
+    }
+  }
+  
+  @keyframes closeeye2 {
+      0% {
+        width: 25px;
+        height: 15px;
+      }
+      50% {
+        width: 25px;
+        height: 20px;
+      }
+      100% {
+        width: 25px;
+        height: 15px;
+      }
+    }
+  

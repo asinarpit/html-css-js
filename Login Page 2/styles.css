@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#22b8c3, #000000);
+}
+
+.main-box {
+  height: 400px;
+  width: 300px;
+  background: #99dfd9;
+  border: none;
+  border-radius: 15px;
+  position: relative;
+  font-family: "Shantell Sans", cursive;
+  padding: 20px;
+}
+
+h1 {
+  position: absolute;
+  top: 15px;
+  left: 100px;
+}
+
+.input-box {
+  position: absolute;
+  top: 70px;
+  font-size: 1.2rem;
+  line-height: 30px;
+}
+
+input {
+  height: 30px;
+  width: 260px;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+button {
+  height: 40px;
+  width: 80px;
+  position: absolute;
+  bottom: 140px;
+  left: 110px;
+  border-radius: 10px;
+  border: 2px solid black;
+  font-weight: 1000;
+  font-size: 1.2rem;
+  color: black;
+  animation: scale 1s linear infinite;
+}
+
+a {
+  text-decoration-line: none;
+  font-family: "Shantell Sans", cursive;
+}
+
+.circle {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.facebook {
+  left: 20px;
+  bottom: 50px;
+  background: url("./Facebook-logo-blue-circle-large-transparent-png.png");
+  background-size: cover;
+}
+.twitter {
+  bottom: 50px;
+  left: 120px;
+  background: url("./twitter_circle-512.webp");
+  background-size: cover;
+}
+.linked-in {
+  bottom: 50px;
+  right: 20px;
+  background: url("./linkedin-icon-512x512-vkm0drb1.png");
+  background-size: cover;
+}
+
+.circle:hover{
+  transition: all 0.1s linear;
+  transform: scale(1.2);
+}
+button:hover{
+  transition: all 0.1s linear;
+  transform: scale(1.2);
+}
+
+button:active{
+  transition: all 0.1s linear;
+  transform: scale(0.9);
+}

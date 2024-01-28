@@ -1,0 +1,86 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url(https://fonts.google.com/specimen/Ubuntu);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background:hsl(229, 24%, 87%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu;
+
+}
+
+.forum-card{
+    position: relative;
+    height: 60%;
+    width: 45%;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    box-shadow: 5px 3px 20px;
+    
+}
+
+.forum-card img{
+    height: 100%;
+
+}
+
+.input-box{
+    position: relative;
+    padding-left: 20px;
+    padding-right: 30px;
+
+}
+h1{
+    font-size: 2rem;
+}
+span{
+    font-size: 1rem;
+    opacity: 0.5;
+}
+button{
+    position: absolute;
+    top: 52vh;
+    right: 40px;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    background-color: #032859;
+    color: white;
+}
+
+.image-text{
+    position: absolute;
+    transform: translate(50%, 30%);
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    
+
+}
+
+input{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #3931cc;
+}

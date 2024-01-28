@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oregon', sans-serif;
+}
+
+body{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 100px 3rem black;
+}
+
+.nav-bar{
+    position: absolute;
+    height: 8%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 0;
+    backdrop-filter: blur(10px);
+    box-shadow: inset 0 0 1em 200px rgba(255, 255, 255, 0.05);
+}
+
+.nav-element{
+    height: 100%;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.nav-element:hover{
+    border-bottom: 3px solid #e53f23;
+}
+
+
+
+.container{
+    height: 400px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    overflow-y: scroll;
+    box-shadow: inset 0 0 1em 200px rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+}
+.hidden {
+    display: none;
+  }
+  
+
+
+.container::-webkit-scrollbar{
+    display: none;
+}
+
+
+.container h1{
+    text-transform: uppercase;
+    font-weight: 1000;
+    font-size: 4rem;
+    letter-spacing: 3mm;
+    margin-bottom: 0.5rem;
+    flex-grow: 0;
+}
+
+.container p{
+    word-spacing: 1mm;
+    line-height:1.7rem;    
+}
+
+.btn{
+    height: 50px;
+    width: 160px;
+    margin-top: 1.5rem;
+    border-radius: 2rem;
+    border: none;
+    background: #e53f23;
+    font-size: 0.9rem;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.8mm;
+    transition: scale 200ms;
+    flex-shrink: 0;
+}
+
+.btn:hover{
+    scale: 1.1; 
+}
+.btn:active{
+    scale: 1;
+}
+
+
+.nav-bubble-bar{
+    position: absolute;
+    height: 200px;
+    width: 50px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    right: 0;
+}
+
+input[type=radio]{
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background:white;
+    margin: 1rem;
+    
+}
+input[type=radio]:hover{
+    scale: 1.3;
+}
+input[type=radio]:checked{
+    content: "";
+    border: 2px solid white;
+    background:transparent;
+    scale: 1.3;
+}
+
+
+@media screen {
+    @media (max-width:680px){
+        .container h1{
+            font-size: 2rem;
+        }
+        
+}
+}
+

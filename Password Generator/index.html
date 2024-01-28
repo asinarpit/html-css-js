@@ -4,75 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Password Generator</title>
-    <script src="./script.js" defer></script>
-
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;600&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Comfortaa"
+    />
   </head>
   <body>
-    <div id="wrapper">
-      <!-- Container -->
-      <div class="container">
-        <!-- Heading  -->
-        <div>
-          <h1 class="heading">Password Generator</h1>
-        </div>
-
-        <!-- Display Container  -->
-        <div class="displayContainer">
-          <input type="text" placeholder="Password" readonly passwordDisplay />
-          <button class="copyBtn">
-            <span copyMessage></span>
-            <img src="./images/copy.svg" alt="copy" width="24" height="24" />
-          </button>
-        </div>
-
-        <!-- Input Container  -->
-        <div class="inputContainer">
-          <div class="lengthContainer">
-            <p>Password Length</p>
-            <p lengthDisplay></p>
-          </div>
-
-          <input type="range" min="1" max="20" step="1" class="slider"/>
-
-          <!-- Checkboxes  -->
-          <div>
-            <div class="check">
-              <input type="checkbox" name="" id="uppercase" />
-              <label for="uppercase">include uppercase letters</label>
-            </div>
-            <div class="check">
-              <input type="checkbox" name="" id="lowercase" />
-              <label for="lowercase">include lowercase letters</label>
-            </div>
-            <div class="check">
-              <input type="checkbox" name="" id="numbers" />
-              <label for="numbers">include numbers</label>
-            </div>
-            <div class="check">
-              <input type="checkbox" name="" id="symbols" />
-              <label for="symbols">include symbols</label>
-            </div>
-          </div>
-
-          <!-- Strength Container -->
-          <div class="strengthContainer">
-            <p>Strength</p>
-            <div class="indicator"></div>
-          </div>
-
-          <!-- Button  -->
-          <button id="generateBtn">Generate password</button>
-        </div>
+    <div class="container">
+      <div class="displayBox">
+        <input type="text" readonly id="displayPass" placeholder="Password" />
+        <button type="button" class="copyBtn">
+          <span copyMessage></span>
+          <i class="fa fa-copy"></i>
+        </button>
       </div>
+
+      <p>Password Length</p>
+      <p id="lengthDigit">0</p>
+      <input type="range" min="1" max="20" step="1" class="slider" /><br />
+
+      <div class="check">
+        <input type="checkbox" id="upper" />
+        <label for="upper">Include Uppercase</label><br />
+        <input type="checkbox" id="lower" />
+        <label for="lower">Include Lowercase</label><br />
+        <input type="checkbox" id="number" />
+        <label for="number">Include Numbers</label><br />
+        <input type="checkbox" id="symbol" />
+        <label for="symbol">Include Symbols</label><br />
+      </div>
+
+      <div class="indicator"></div>
+      <button type="button" id="genButton">Generate Password</button>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
